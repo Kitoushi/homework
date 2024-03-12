@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.box::before {
+  content: 'Before';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+.box::after {
+  content: 'After';
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  background-color: lightcoral;
+  padding: 5px;
+}

@@ -1,0 +1,27 @@
+.animated-element {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  animation: move 2s infinite alternate, color-change 1s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: lightblue;
+  }
+  50% {
+    background-color: lightgreen;
+  }
+  100% {
+    background-color: lightcoral;
+  }
+}
